@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Outpatient System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="hospitalLogo.png" alt="Hospital Logo">
+            </div>
+            <h1 class="app-title">Outpatient Management System</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="registrationForm.html">Patients</a></li>
+                    <li><a href="clinicianDashboard.html">Clinicians</a></li>
+                    <li><a href="LaboratoryInterface.html">Laboratory</a></li>
+                    <li><a href="pharmacydashboard.html">Pharmacy</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="lab-interface">
+        <h2>Laboratory Interface</h2>
+        <div class="test-order-list">
+            <h3>Electronic Test Order Management</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Patient Name</th>
+                        <th>Test Name</th>
+                        <th>Status</th>
+                        <th>Update Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>Complete Blood Count (CBC)</td>
+                        <td>Sample Collected</td>
+                        <td>
+                            <select>
+                                <option value="Sample Collected">Sample Collected</option>
+                                <option value="In Progress">In Progress</option>
+                                <option value="Completed">Completed</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Additional orders can be listed here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="result-reporting">
+        <h3>Automated Result Reporting</h3>
+        <form class="result-form">
+            <label for="orderId">Order ID:</label>
+            <input type="text" id="orderId" name="orderId" required>
+    
+            <label for="result">Enter Test Result:</label>
+            <textarea id="result" name="result" rows="4" required></textarea>
+    
+            <button type="submit">Submit Result</button>
+        </form>
+    </section>
+    
+    
+    
+  
+
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: support@healthcaresystem.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Health St, Wellness City, HC 45678</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Healthcare System. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
